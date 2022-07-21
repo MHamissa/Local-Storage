@@ -32,7 +32,7 @@ console.log(localStorage.getItem('list'));
 
    }else{
     var m=parseInt(removeValue.value);
-     document.querySelector('OL').removeChild(teams[m]);
+     document.querySelector('OL').removeChild(teams[m-1]);
      
     
     localStorage.setItem('list',document.querySelector('OL').innerHTML);
